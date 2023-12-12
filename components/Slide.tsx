@@ -27,8 +27,6 @@ const SlideProduct: React.FC<numberArrow> = ({number}) => {
           910: {
             slidesPerView: 3,
           }
-         
-         
         }}
         navigation={{
           prevEl: `.prev-${number}`,

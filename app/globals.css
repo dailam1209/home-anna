@@ -83,3 +83,42 @@
   animation: scrollText 20s infinite linear;
 }
 
+img {
+  transition: transform .3s ease-in-out;
+
+}
+
+.slide-hover:hover img {
+  transform: scale(1.1);
+}
+
+.price-product-slide {
+  transition: transform .3s ease-in-out;
+}
+
+.slide-hover:hover .price-product-slide {
+  background-color: #f58f5d;
+  transform: translateY(-0.2rem);
+}
+
+.arrow-peoduct-slide  {
+  transition: transform .3s ease-in-out;
+
+}
+
+.slide-hover:hover .arrow-peoduct-slide {
+  transform: rotate(45deg);
+}
+
+.swiper-backface-hidden .swiper-slide {
+  overflow: hidden !important;
+ }
+
+ .swiper-backface-hidden .swiper-slide{
+  cursor: pointer !important
+  ;
+ }
+
+
+
+

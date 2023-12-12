@@ -6,7 +6,7 @@ import { RowDown } from '../icons'
 const Home = () => {
   return (
     <div>
-        <div className='banner flex justify-between lg:h-[50.12rem]  min-w-full '>
+        <div className='banner flex justify-between lg:h-[50.12rem] min-w-full '>
             <div className='lg:h-[50.12rem] w-[50%]'>
                 <Image src="https://i.pinimg.com/564x/9e/3d/35/9e3d35c123232e755fa70681c2153809.jpg" alt="test"  layout='fill' objectFit='cover'/>
             </div>
@@ -14,7 +14,7 @@ const Home = () => {
                 <Image src="https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg"  alt="test" fill objectFit='cover'/>
             </div>
         </div>
-        <div className='bg-[#EEF9F9] lg:px-[6.25rem] md:px-[3.5rem] lg:pt-[8.12rem] md:pt-[4.12rem] md:text-center sm:flex sm:justify-center sm:pt-[4.12rem]'>
+        <div className='bg-[#EEF9F9] lg:px-[6.25rem] md:px-[3.5rem] lg:pt-[8.12rem] md:pt-[4.12rem] '>
             <div className=' flex top-sale lg:text-[2.375rem] font-black text-[#55D5D2] uppercase lg:h-[2.85rem] items-center'>
                 <div className='flex relative '>
                     <span className='relative'>Flash Sale</span>
