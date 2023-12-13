@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  font-size: 1vw;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,6 +70,11 @@
     background-color: #fff;
 }
 
+.colection-shadown {
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05) ;
+  border-radius: 1rem;;
+}
+
 @keyframes scrollText {
   from {
     transform: translateX(0);
@@ -88,15 +94,19 @@ img {
 
 }
 
-.slide-hover:hover img {
-  transform: scale(1.1);
+.colection-shadown {
+  overflow: hidden;
 }
 
-.price-product-slide {
+.slide-hover:hover img, .colection-shadown:hover img {
+  transform: scale(1.1); 
+}
+
+.price-product-slide , .colection-shadown{
   transition: transform .3s ease-in-out;
 }
 
-.slide-hover:hover .price-product-slide {
+.slide-hover:hover .price-product-slide, .colection-shadown:hover .price-product-slide{
   background-color: #f58f5d;
   transform: translateY(-0.2rem);
 }
@@ -106,7 +116,7 @@ img {
 
 }
 
-.slide-hover:hover .arrow-peoduct-slide {
+.slide-hover:hover .arrow-peoduct-slide, .colection-shadown:hover .arrow-peoduct-slide {
   transform: rotate(45deg);
 }
 
@@ -119,6 +129,80 @@ img {
   ;
  }
 
+ /* address icons */
+ .address-icon {
+  width: 26px;
+  height: 26px;
+ }
+.flow-address  svg{
+  width: 1.99981rem;
+  height: 2rem;
+  color: #F58F5D;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 4px !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+}
+
+.swiper-pagination {
+  align-items: center;
+  display: flex ;
+  top: 2.5rem;
+  justify-content: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets {
+ 
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+	padding: 2px 2px;
+	line-height: 30px;
+	font-size: 12px;
+  opacity: 1;
+	background: #fff !important;
+}
+.banner .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  padding: 6px 6px;
+	background: #44AAA8 !important;
+  border: 2px solid;
+    border-color: #ffff;
+}
+
+.address-all .swiper-wrapper {
+  height: 30.5rem;
+}
+
+.address-swiper .swiper {
+  height: 31rem;
+}
 
 
 
+
+ @media screen and (max-width: 767px) {
+  .swiper-backface-hidden .swiper-slide {
+    width: 10.375rem  !important;
+  }
+  
+.swiper { 
+  padding: 0rem !important;
+  padding-bottom: 1.5rem;;
+  height: 19.7rem;
+}
+ }
+
+ .hidden-scollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+img {
+  position: relative !important;
+}

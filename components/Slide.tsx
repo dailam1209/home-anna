@@ -15,7 +15,7 @@ export interface numberArrow {
 
 const SlideProduct: React.FC<numberArrow> = ({number}) => {
   return (
-    <div className="flex "> 
+    <div className=""> 
 
       <Swiper
         spaceBetween={32}
@@ -26,6 +26,9 @@ const SlideProduct: React.FC<numberArrow> = ({number}) => {
           },
           910: {
             slidesPerView: 3,
+          },
+          766: {
+            slidesPerView: 1,
           }
         }}
         navigation={{
@@ -35,7 +38,7 @@ const SlideProduct: React.FC<numberArrow> = ({number}) => {
         modules={[Pagination, Navigation]}
         className="mySwiper pl-[0rem] mx-[1rem] "
       >
-        <SwiperSlide className="slide-hover rounded-[1rem] box-shadown  pb-1rem">
+        <SwiperSlide className="slide-hover rounded-[1rem] box-shadown  pb-1rem max-sm:w-[10.375rem]" >
           <Iterm/>
         </SwiperSlide>
         <SwiperSlide className="slide-hover ">
@@ -58,13 +61,15 @@ const SlideProduct: React.FC<numberArrow> = ({number}) => {
         </SwiperSlide>
        
       </Swiper>
-      <div className={`prev-${number} max-lg:left-[1.2rem] max-lg:z-[2] top-[30%] absolute lg:left-[-6.5%] md:left-[-4.5%] md:w-[4.5rem] md:h-[4.5rem] cursor-pointer`}>
+      <div className={`prev-${number} max-lg:left-[1.2rem] max-lg:z-[2] top-[30%] absolute lg:left-[-5.5%] md:left-[-4.5%] md:w-[4.5rem] md:h-[4.5rem] cursor-pointer max-sm:hidden`}>
         <ArrowSlideLeft/>
       </div>
-    <div className={`next-${number} max-lg:right-[-1.2rem] max-lg:z-[2]  top-[30%] absolute lg:right-[-6.5%]  md:right-[-4.5%] md:w-[4.5rem] md:h-[4.5rem] cursor-pointer`}><ArrowSlideRight/></div>
+    <div className={`next-${number} max-lg:right-[-1.2rem] max-lg:z-[2]  top-[30%] absolute lg:right-[-5.5%]  md:right-[-4.5%] md:w-[4.5rem] md:h-[4.5rem] cursor-pointer max-sm:hidden`}><ArrowSlideRight/></div>
     </div>
   );
 };
+
+
 
 export default SlideProduct;
 
